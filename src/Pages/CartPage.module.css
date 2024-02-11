@@ -1,0 +1,27 @@
+/* CartPage.module.css */
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.CartPageContainer {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.noItemsHeading {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+}

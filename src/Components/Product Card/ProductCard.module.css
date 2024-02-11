@@ -1,0 +1,131 @@
+/* ProductCard.module.css */
+.productContainer {
+  position: relative;
+  height: auto;
+  min-height: 500px;
+  width: 300px;
+  margin: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: #d7e1ee;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.productContainer:hover {
+  transform: scale(1.06);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.heading {
+  color: #101114;
+}
+
+.description {
+  word-spacing: 2px;
+  text-align: center;
+  color: #000000;
+  max-height: 3.6em; /* Set the maximum height to two lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  font-weight: 300;
+  -webkit-box-orient: vertical;
+}
+
+.price {
+  color: #2830c8;
+}
+
+.addToCartBtn {
+  width: 100%;
+  height: 2.6rem;
+  background-color: #2400ee;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: large;
+  font-weight: 700;
+}
+
+.addToCartBtn:hover {
+  background-color: white;
+  color: #010101;
+  border: 2px solid #2400ee;
+}
+
+.icon {
+  height: 2.6rem;
+  transition: all 0.2s ease;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 26%;
+  top: -20px;
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.moreInfoBtn {
+  background-color: #00112c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.moreInfoBtn:hover {
+  background-color: #2d5aa5;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.moreInfoBtn:after {
+  content: "";
+  background: #fff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0.4;
+  transition: all 2s;
+}
+
+.moreInfoBtn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 0.2;
+  transition: 0s;
+}

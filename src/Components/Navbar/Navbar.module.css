@@ -1,0 +1,83 @@
+/* Navbar.module.css */
+.navbarContainer {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  background-color: rgb(9, 0, 108);
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+
+  color: white;
+  z-index: 1000;
+}
+
+.navItemsLeft {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navItemsRight {
+  display: flex;
+  gap: 2rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navItem p {
+  font-size: large;
+  font-weight: 600;
+}
+
+.navItem img {
+  height: 2rem;
+}
+
+/* Style for the NavLink */
+.navLink {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+.navItem:hover {
+  color: rgb(252, 71, 71);
+}
+
+.navLink:hover {
+  color: rgb(239, 80, 80);
+}
+
+#cartContainer {
+  position: relative;
+}
+
+.cartItemsCount {
+  position: absolute;
+  top: -10px;
+  right: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbarContainer {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .navItemsLeft,
+  .navItemsRight {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navItem p {
+    font-size: small;
+  }
+}

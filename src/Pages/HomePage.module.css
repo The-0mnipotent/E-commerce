@@ -1,0 +1,41 @@
+/* HomePage.module.css */
+.sortButton {
+  position: relative;
+  left: 60px;
+  margin: 6rem 2rem 0rem 0rem;
+  padding: 10px;
+  width: 160px;
+  font-size: 1.2rem;
+  background-color: rgba(16, 0, 241, 0.6);
+  border: 5px solid rgb(0, 200, 255);
+  color: white;
+  border-radius: 16px;
+  font-weight: bolder;
+  transition: all 0.6s ease;
+}
+
+.sortButton:hover {
+  /* background-color: white; */
+  color: rgb(255, 255, 255);
+  transform: scale(105%);
+}
+
+.loaderContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  height: 1.6rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sortButton {
+    font-size: 1rem;
+    width: 120px;
+    padding: 8px;
+  }
+}
