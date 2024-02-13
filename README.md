@@ -88,9 +88,6 @@ This React E-commerce App is a showcase of a fully functional online store with 
 
 Explore the products, edit them, add to the cart, and enjoy a seamless shopping experience! 🛒
 
-## Video 📸
-
-https://github.com/ParmodKumar28/E-Commerce-React-App/assets/91540271/40c043b5-7d8e-4f41-88a4-dc20620da6ca
 
 ## Contributing 🤝
 
